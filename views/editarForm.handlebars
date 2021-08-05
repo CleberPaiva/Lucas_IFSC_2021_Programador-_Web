@@ -1,0 +1,23 @@
+<h1>Cliente código {{idcliente}}</h1>
+
+<form action="/editarReq/{{idcliente}}" method="POST">
+<div class="mb-3">
+				<label class="form-label">Nome</label>
+				<input class="form-control" type="text" name="nome">			
+</div>
+<div class="mb-3">
+				<label class="form-label">CPF</label>
+				<input class="form-control" type="text" name="cpf">
+</div>
+<div class="mb-3">
+				<label class="form-label">E-mail</label>
+				<input class="form-control" type="text" name="email">
+</div>
+<div class="mb-3">
+				<label class="form-label">Cidade</label>
+				<input class="form-control" type="text" name="cidade">
+</div>
+
+
+				 <button type="submit" class="btn btn-primary">Atualizar</button>
+</form>

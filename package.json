@@ -1,0 +1,31 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "banco_de_dados.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-raf/Projeto-Ifsc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-raf/Projeto-Ifsc/issues"
+  },
+  "homepage": "https://github.com/Lucas-raf/Projeto-Ifsc#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.0",
+    "querystring": "^0.2.1",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,0 +1,27 @@
+<a href="/cadastrar"><button type="button" class="btn btn-success">Novo</button></a>
+<p>
+<p>Bem vindo, {{pessoa}}!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">CPF</th>
+            <th scope="col">E-mail</th>
+			<th scope="col">Cidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each cliente}}
+        <tr>
+            <th>{{nome}}</th>
+            <td>{{cpf}}</td>
+            <td>{{email}}</td>
+			<td>{{cidade}}</td>
+            <td>
+                <a href="/editar/{{idcliente}}"><button type="submit" class="btn btn-warning">Alterar</button></a>
+                <a href="/remover/{{idcliente}}"><button type="submit" class="btn btn-danger">Excluir</button></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
