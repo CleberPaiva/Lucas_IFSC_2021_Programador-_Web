@@ -3,7 +3,7 @@ var handlebars = require("express-handlebars")
 var rotas = require("./rotas")
 
 var aplicacao = express()
-const PORTA = 8085
+const PORTA = 80
 
 aplicacao.engine("handlebars", handlebars({defaultLayout: "main"}))
 aplicacao.set("view engine", "handlebars")
