@@ -122,8 +122,8 @@ controlador.montarReqEdicao = function(req, res) {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             proxy:{
-                host: "localhost",
-                port: 8085
+                host: "52.67.178.51",
+                port: 80
             }
         }
     ).then(function () {
@@ -137,8 +137,8 @@ controlador.montarReqEdicao = function(req, res) {
 controlador.montarReqDelete = function (req, res) {
     axios.delete('/cliente/' + req.params.id,{
         proxy:{
-           
-            port: 8085
+            host: "52.67.178.51",
+            port: 80
         }
     }).then(function () {
             res.status(200).redirect("/cliente")
